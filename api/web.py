@@ -6,7 +6,7 @@ app = Flask(__name__)
 def catch_all(path):
     print(request.args)
     key = request.args.get('key')
-    return Response("<h1>Flask</h1><p>You visited: /%s</p><p>key=%s</p>" % (path,key), mimetype="text/html")
+    return Response({"code":200,"msg":"success","newslist":[{"content":"我不允许你们说自己胖 你们那不叫胖 那叫可爱到膨胀。"}]}, mimetype="text/json")
     
 if __name__ == "__main__":
     app.run(debug = True)
