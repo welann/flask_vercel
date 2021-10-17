@@ -14,5 +14,9 @@ def catch_all(path):
     
     return Response(choice(list), mimetype="text/json")
 
+@app.route('/hello')
+def hello():
+    return u'欢迎来到我的 Watchlist！'
+
 if __name__ == "__main__":
     app.run(debug = True)
