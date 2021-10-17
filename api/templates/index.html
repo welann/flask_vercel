@@ -36,8 +36,8 @@ body {
 }
 </style>
 <head>
-    
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="referrer" content="no-referrer" />  
+
 
 </head>
 <body>
@@ -52,6 +52,6 @@ body {
         <li>{{ words }}</li>  {# 等同于 movie['title'] #}
         {#% endfor %#}  {# 使用 endfor 标签结束 for 语句 #}
     </ul>
-    <img alt="Walking Totoro" class="totoro" src="{{ url_for('static', filename='images/foot.jpg') }}">
+    <img alt="smile everyday" class="totoro" src={{pic}}>
 </body>
 </html>

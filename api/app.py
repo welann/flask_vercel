@@ -38,7 +38,14 @@ def catch_all(path):
 
 @app.route('/start')
 def index():    
-    return render_template('index.html', words=choice(secon))
+    pic=["https://z3.ax1x.com/2021/10/18/5NSWAs.jpg",
+        "https://z3.ax1x.com/2021/10/18/5NSHuF.jpg",
+        "https://z3.ax1x.com/2021/10/18/5NSOE9.jpg",
+        "https://z3.ax1x.com/2021/10/18/5NSbB4.jpg",
+        "https://z3.ax1x.com/2021/10/18/5NSqHJ.jpg"
+    
+    ]
+    return render_template('index.html', words=choice(secon),pic=choice(pic))
     
 
 if __name__ == "__main__":
