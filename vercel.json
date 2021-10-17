@@ -5,11 +5,8 @@
         { "src": "api/*.py", "use": "@vercel/python" }   
     ],
     "routes": [
-        { "src": "/", "dest": "/index.html" },     
-        {"src": "/hello", "dest": "/api/web.py"},  
-        { "src": "/api/date", "dest": "/api/date.py" },
-        { "src": "/api/ip/(.*)", "dest": "/api/ip_query.py" },  
-        { "src": "/api/(.*)", "dest": "/api/web.py" },   
-        { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+        
+        {"src": "/start", "dest": "/api/app.py"},  
+        { "src": "/api/web", "dest": "/api/app.py" }
     ]
 }
