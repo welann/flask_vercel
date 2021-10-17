@@ -1,9 +1,7 @@
 {
     "version": 2,
     "builds": [   
-        { "src": "api/static/*.jpg", "use": "@vercel/static" },
-        { "src": "api/static/images/*.jpg", "use": "@vercel/static" },
-        { "src": "api/static/*.css", "use": "@vercel/static" },
+        { "src": "api/static/images/foot.jpg", "use": "@vercel/static" },
         { "src": "api/*.py", "use": "@vercel/python" }   
     ],
     "routes": [
