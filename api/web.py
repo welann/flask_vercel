@@ -1,10 +1,10 @@
 from flask import Flask, Response, request
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 from random import choice
 
 app = Flask(__name__)
 
-db = SQLAlchemy(app)
+# db = SQLAlchemy(app)
 
 list=["让人迷茫的原因只有一个，那就是本该拼搏的年纪，想的太多，却做的太少！","你知道吗，你红尘梦醒的那一刻，是我看过的，最美丽的画面。",\
     "跟你在一起的时光都很耀眼,因为天气好,因为天气不好,因为天气刚刚好,每一天，都很美好。","凌晨四点钟，我看见海棠花未眠。总觉得这时，你应该在我身边。",\
