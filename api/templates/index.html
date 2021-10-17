@@ -1,8 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+body {
+    margin: auto;
+    max-width: 580px;
+    font-size: 14px;
+    text-align: center;
+    font-weight:bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.movie-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.movie-list li {
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-list li:last-child {
+    border-bottom:none;
+}
+
+.movie-list li:hover {
+    background-color: #f8f9fa;
+}
+.totoro {
+    display: block;
+    margin: 0 auto;
+    height: 280px;
+}
+</style>
 <head>
-    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    
     <meta charset="utf-8">
 
 </head>
@@ -10,12 +44,13 @@
     <h2>
 
     </h2>
-    {# 使用 length 过滤器获取 movies 变量的长度 #}
-    <p >10 条</p>
+    
+    <p > | </p>
+    <p > | </p>
     <ul class="movie-list">
-        {% for word in words %}  {# 迭代 movies 变量 #}
-        <li>{{ word.k }}</li>  {# 等同于 movie['title'] #}
-        {% endfor %}  {# 使用 endfor 标签结束 for 语句 #}
+        {#% for word in words %#}  {# 迭代 movies 变量 #}
+        <li>{{ words }}</li>  {# 等同于 movie['title'] #}
+        {#% endfor %#}  {# 使用 endfor 标签结束 for 语句 #}
     </ul>
     <img alt="Walking Totoro" class="totoro" src="{{ url_for('static', filename='images/foot.jpg') }}">
 </body>
